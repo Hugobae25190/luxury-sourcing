@@ -25,12 +25,18 @@ export default function Navbar() {
         visible ? 'translate-y-0' : '-translate-y-full'
       } bg-[#131e28] border-b border-gray-700`}
     >
-      <div className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center text-white">
+<div className="max-w-7xl mx-auto px-4 py-1 sm:py-2 md:py-2 flex justify-between items-center text-white">
+
       <Link href="/">
 
-<Image src="/logo SVG.svg" alt="Logo" width={120} height={120} />
+<Image
+  src="/logo SVG.svg"
+  alt="Logo"
+  width={80}
+  height={80}
+/>
 </Link>
-        <div className="space-x-6 text-sm">
+        <div className="space-x-4 text-xs sm:text-sm md:text-base lg:text-lg">
           <Link href="/services">Services</Link>
           <Link href="/about">About</Link>
           <Link href="/contact">Contact</Link>
